@@ -1,0 +1,179 @@
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f9;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+.container{
+flex:1;
+padding:35px;
+}
+
+img{
+max-width:100%;
+height:auto;
+}
+
+/* header */
+
+.header{
+background:#154360;
+color:white;
+padding:18px 25px;
+display:flex;
+align-items:center;
+}
+
+.header img{
+width:40px;
+margin-right:10px;
+}
+
+.header h1{
+margin:0;
+}
+
+/* navbar */
+
+.navbar{
+background:#e5e7e9;
+padding:12px 25px;
+}
+
+.navbar a{
+margin-right:20px;
+text-decoration:none;
+font-weight:bold;
+color:#2c3e50;
+}
+
+.navbar a:hover{
+color:#1abc9c;
+}
+
+/* dashboard cards */
+
+.card-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+padding:25px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 20px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:70px;
+}
+
+.count{
+font-size:30px;
+font-weight:bold;
+color:#154360;
+margin:10px 0;
+}
+
+/* tables */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+table th,table td{
+padding:12px;
+border-bottom:1px solid #eee;
+text-align:left;
+}
+
+table th{
+background:#154360;
+color:white;
+}
+
+table tr:hover{
+background:#f7f7f7;
+}
+
+/* forms */
+
+form{
+display:flex;
+flex-direction:column;
+max-width:420px;
+gap:10px;
+margin-top:15px;
+}
+
+form input,form select{
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:10px;
+background:#154360;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1abc9c;
+}
+
+/* login page */
+
+.login-page{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background-image:url("/PPS/images/background.png");
+background-size:cover;
+background-position:center;
+}
+
+.login-card{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.login-logo{
+width:80px;
+margin-bottom:10px;
+}
+
+/* footer */
+
+.footer{
+background:#154360;
+color:white;
+text-align:center;
+padding:12px;
+margin-top:auto;
+}
